@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label> 
+        <br>
+        <input id="name" placeholder="Enter your name" type="text"> 
+        <br>
+        <label id="email-label" for="email">Email</label> 
+        <br>
+        <input id="email" placeholder="Enter your Email" type="email"> 
+        <br>
+        <label id="number-label" for="number">Age (optional)</label> 
+        <br>
+        <input id="number" type="number" placeholder="Age" min="10" max="80"> <br>
+
+        <label for="dropdown">Which option best describes your current role?</label>
+        <br>
+        <select id="dropdown"> 
+            <option value="" selected disabled>Select current role</option>
+            <option value="" >Full Time Job</option>
+            <option value="" >Full Time Learner</option>
+            <option value="" >Prefer not to say</option>
+            <option value="" >Other</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" name="isRecomend" checked>Definitely <br>
+            <input type="radio" name="isRecomend">Maybe <br>
+            <input type="radio" name="isRecomend">Not sure <br>
+        </p>
+
+        <label for="dropdown">What is your favorite feature of freeCodeCamp?</label> 
+        <br>
+        <select name="" id="dropdown"> 
+            <option value="" selected disabled>Select an option</option>
+            <option value="challenges" >Challenges</option>
+            <option value="projects" >Projects</option>
+            <option value="community" >Community</option>
+            <option value="open Source" >Open Source</option>
+        </select>
+        <br>
+
+        <textarea placeholder="Enter your comment here..."></textarea>
+        <br>
+        <button id="submit">Submit</button>
+        </form>
+    </form>
+
+</body>
+
+</html>
